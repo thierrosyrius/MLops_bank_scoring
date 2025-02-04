@@ -1,0 +1,6 @@
+streamlit
+lightgbm
+numpy
+pandas
+pillow
+scikit-learn
