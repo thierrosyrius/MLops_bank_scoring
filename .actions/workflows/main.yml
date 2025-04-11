@@ -1,4 +1,4 @@
-name: Build and deploy scoring bank
+name: Build and deploy scoring bank app
 
 on:
   push:
