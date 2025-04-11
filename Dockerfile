@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 5. Expose the port Streamlit will run on (default is 8501)
-EXPOSE 8070
+EXPOSE 8501
 
 # 6. Command to run the Streamlit app when the container starts
-CMD ["streamlit", "run", "app.py"]
+#CMD ["streamlit", "run", "app.py"]
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
